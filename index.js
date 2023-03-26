@@ -3,14 +3,12 @@ const dayjs = require('dayjs');
 
 function main() {
     try {
-        console.log('function main');
-        const date = new Date();
         const format = "YYYY-MMM-DD hh:mmA"
-        const formtted = dayjs().format(format);
-        console.log(formtted);
+        const dateFormat = dayjs().format(format);
+        console.log(dateFormat);
         fs.writeFileSync('date-log.txt', formtted);
     } catch (e) {
-
+        console.log("Error", e);
     }
 }
 
