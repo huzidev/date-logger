@@ -3,10 +3,11 @@ const dayjs = require('dayjs');
 
 function main() {
     try {
-        const format = "YYYY-MMM-DD hh:mmA"
+        // mmm for alphabetical month, mm for months in number hh:mmA, A for AM, PM
+        const format = "YYYY-MMM-DD, ddd hh:mmA"
         const dateFormat = dayjs().format(format);
         console.log(dateFormat);
-        fs.writeFileSync('date-log.txt', formtted);
+        fs.writeFileSync('date-log.txt', dateFormat);
     } catch (e) {
         console.log("Error", e);
     }
