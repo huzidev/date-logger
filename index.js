@@ -1,5 +1,5 @@
-const fs = require('fs');
-const dayjs = require('dayjs');
+const fs = require("fs");
+const dayjs = require("dayjs");
 
 function main() {
     try {
