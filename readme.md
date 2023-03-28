@@ -12,4 +12,4 @@ Press Win + R > shell:startup > create a startup.bat file (now edit the file)\
 
 1: cd D:node/datelogger\
 2: D:\
-3: npm start 
+3: npm start
